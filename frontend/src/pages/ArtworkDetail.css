@@ -1,0 +1,97 @@
+.artwork-detail {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.artwork-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.artwork-image-wrap {
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--card-bg);
+}
+
+.artwork-image-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.artwork-info h1 {
+  margin-bottom: 0.5rem;
+}
+
+.artwork-info .category {
+  text-transform: capitalize;
+  color: var(--text-muted);
+}
+
+.artwork-info .artist {
+  margin-bottom: 1rem;
+}
+
+.artwork-info .description {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.bid-section {
+  background: var(--bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.current-bid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.current-bid strong {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.auction-end {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.ended-badge {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.bid-form {
+  margin-top: 1rem;
+}
+
+.bid-form .btn {
+  margin-top: 0.5rem;
+}
+
+.bid-history ul {
+  list-style: none;
+}
+
+.bid-history li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.bid-history li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .artwork-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}

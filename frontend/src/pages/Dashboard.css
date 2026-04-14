@@ -1,0 +1,310 @@
+.dashboard h1 {
+  margin-bottom: 1.5rem;
+}
+
+.dashboard h3 {
+  margin-bottom: 1rem;
+}
+
+.dashboard-stats-section {
+  margin-bottom: 2rem;
+}
+
+.dashboard-stats-section h3 {
+  margin-bottom: 1rem;
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.chart-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.chart-section h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard > .btn {
+  margin-bottom: 1.5rem;
+}
+
+.form-card {
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.link-small {
+  font-size: 0.9rem;
+  color: var(--primary);
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.bids-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bid-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.bid-card-content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.bid-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.bid-card h3 a {
+  color: inherit;
+}
+
+.highest {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.lost {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.small {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.stat-card span {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.admin-section {
+  margin-bottom: 2rem;
+}
+
+.admin-section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.admin-dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-dashboard th,
+.admin-dashboard td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.admin-dashboard th {
+  font-weight: 600;
+  background: var(--bg);
+}
+
+.btn-sm {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+.admin-dashboard .btn-outline {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-tabs button {
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.admin-tabs button.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.badge-count {
+  background: var(--accent);
+  color: var(--text);
+  padding: 0.15rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-left: 0.25rem;
+}
+
+.stat-card.highlight {
+  border: 2px solid var(--accent);
+  cursor: pointer;
+}
+
+.verification-section .section-desc {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.verification-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.verify-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.verify-card .muted {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.pending-list {
+  list-style: none;
+}
+
+.pending-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pending-item:last-child {
+  border-bottom: none;
+}
+
+.pending-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pending-thumb {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.pending-info strong {
+  display: block;
+}
+
+.pending-info span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.pending-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.badge-verified {
+  color: var(--success);
+}
+
+.verification-badge {
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.verification-badge.approved {
+  background: #d4edda;
+  color: var(--success);
+}
+
+.verification-badge.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.verification-badge.rejected {
+  background: #f8d7da;
+  color: var(--danger);
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .bid-card {
+    align-items: flex-start;
+  }
+
+  .bid-card-content {
+    align-items: flex-start;
+  }
+
+  .bid-thumb {
+    width: 64px;
+    height: 64px;
+  }
+}

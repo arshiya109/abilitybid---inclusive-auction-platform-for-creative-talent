@@ -1,0 +1,50 @@
+.route-splash {
+  position: fixed;
+  inset: 0;
+  background: rgba(248, 246, 240, 0.82);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1400;
+  animation: splashFade 450ms ease forwards;
+}
+
+.route-splash-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+  padding: 1rem 1.2rem;
+  min-width: 240px;
+}
+
+.route-splash-card h4 {
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+}
+
+.route-bars {
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.route-bars span {
+  flex: 1;
+  height: var(--h);
+  background: linear-gradient(180deg, var(--primary-light), var(--primary));
+  border-radius: 8px 8px 2px 2px;
+  animation: barPulse 450ms ease;
+}
+
+@keyframes barPulse {
+  from { height: 8%; opacity: 0.55; }
+  to { height: var(--h); opacity: 1; }
+}
+
+@keyframes splashFade {
+  from { opacity: 0; }
+  30% { opacity: 1; }
+  to { opacity: 0; }
+}
